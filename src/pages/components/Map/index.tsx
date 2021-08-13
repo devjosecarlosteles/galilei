@@ -31,8 +31,8 @@ function MapComponent () {
     const interval = setInterval(async () => {
       const response = await getISSPosition.get('')
       if(response.data.message === 'success') {
-        setLatitudeState(response.data.iss_position.latitude)
-        setLongitudeState(response.data.iss_position.longitude)
+        setLatitudeState(response.data.latitude)
+        setLongitudeState(response.data.longitude)
         console.log(longitudeState)
       }
     }, 2000);
