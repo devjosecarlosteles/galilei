@@ -15,6 +15,7 @@ function MapComponent () {
       defaultZoom={ 4 } 
       center={{ lat: parseInt(latitudeState), lng: parseInt(longitudeState) }}
       mapTypeId={ google.maps.MapTypeId.HYBRID }
+      key='AIzaSyBX_JVj9M3tZrj6mtKGCZI3KigF0H_IIqI'
     >
       <Marker 
         position={{ lat: parseInt(latitudeState), lng: parseInt(longitudeState) }} 
