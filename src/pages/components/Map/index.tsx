@@ -7,8 +7,8 @@ import {
 import getISSPosition from "../../services/getISSPosition"
 
 function MapComponent () {
-  const [ latitudeState, setLatitudeState ] = useState('')
-  const [ longitudeState, setLongitudeState ] = useState('')
+  const [ latitudeState, setLatitudeState ] = useState('-34.397')
+  const [ longitudeState, setLongitudeState ] = useState('150.644')
 
   const Map = withGoogleMap(props => (
     <GoogleMap 
