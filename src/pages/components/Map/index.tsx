@@ -30,11 +30,8 @@ function MapComponent () {
   useEffect(() => {
     const interval = setInterval(async () => {
       const response = await getISSPosition.get('')
-      if(response.data.message === 'success') {
         setLatitudeState(response.data.latitude)
         setLongitudeState(response.data.longitude)
-        console.log(longitudeState)
-      }
     }, 2000);
     return () => clearInterval(interval);
   }, [latitudeState, longitudeState])
